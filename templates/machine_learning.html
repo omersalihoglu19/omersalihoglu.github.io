@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Ana Sayfa</a></li>
+            <li><a href="/visualizations">Analizler</a></li>
+            <li><a href="/map">Terör Haritası</a></li>
+            <li><a href="/machine_learning">Machine Learning</a></li>
+        </ul>
+    </nav>
+
+    <section id="ml-section">
+        <h1>Makine Öğrenimi Modeli Sonuçları</h1>
+
+        
+        <h3>Model: LinearRegression modeli kullanılmıştır ve model.fit() ile eğitilmiştir.</h3>
+        <h3>R² skoru 0.82</h3>
+        <img src="/static/linerreg.png" alt="ROC Curve" style="width:80%; display:block; margin:auto;">
+        
+
+        <h2>ROC Eğrisi</h2>
+        <img src="/static/roc_curve.png" alt="ROC Curve" style="width:80%; display:block; margin:auto;">
+
+        <h2> LSTM (Long Short-Term Memory) modelinin zaman serisi tahminleri</h2>
+        <img src="/static/lstm.png" alt="ROC Curve" style="width:80%; display:block; margin:auto;">
+
+        <h2>Confusion Matrix</h2>
+        <h3>sınıflandırma modeli:Random Forest </h3>
+        <h3>Accuracy: 0.84 </h3>
+        <img src="/static/ConfusionMatrix.png" alt="ROC Curve" style="width:80%; display:block; margin:auto;">
+
+        
+    </section>
+    
+
+    <footer>
+        <ul>
+            <li>&copy; 2024 ömer salihoğlu. Tüm Hakları Saklıdır.</li>
+            <li><a href="mailto:omersalihoglu19@gmail.com">İletişim</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

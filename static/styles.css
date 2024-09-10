@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#description-section {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    min-height: calc(100vh - 150px);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Grafiklerin olduğu bölümü ortalamak için stil */
+#visualization-section {
+    text-align: center; /* Grafikleri yatayda ortalar */
+    margin-top: 100px;
+}
+
+#visualization-section img {
+    max-width: 80%; /* Grafiklerin genişliği sayfanın %80'ini geçmeyecek */
+    height: auto;
+    display: block; /* Blok eleman olarak davranır */
+    margin: 20px auto; /* Grafikleri ortalamak için margin */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#ml-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#ml-section img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #visualization-section img {
+        max-width: 100%; /* Küçük ekranlarda grafikleri tam genişlikte göster */
+    }
+}
